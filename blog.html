@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="style.css">
+
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+
+
+    <!-- Personalized CSS to override some bootstrap styles -->
+    <style>
+        body {
+            font-family: 'Outfit', sans-serif;
+            background-color: #f8f9fa !important;
+        }
+
+        header {
+            padding: 1em;
+            font-size: 22px;
+        }
+
+        hr {
+            margin: 0 auto;
+            width: 95%;
+        }
+
+        .navbar {
+            width: 100%;
+            padding: 0.5em 1em;
+
+            .navbar-brand {
+                display: flex;
+                flex-direction: row;
+                font-size: 25px;
+                font-weight: 800;
+
+                img {
+                    margin-right: 10px;
+                }
+            }
+        }
+
+        .navbar-collapse {
+            display: flex;
+            justify-content: space-between;
+            flex-grow: 0 !important;
+        }
+
+        .nav-link {
+            margin: 0 1.5em;
+        }
+
+        .nav-link:hover {
+            color: #C3A9F7ff;
+        }
+
+        .carousel-item {
+            height: 57vh;
+            background: linear-gradient(90deg, rgba(195, 169, 247, 1) 0%, rgba(30, 96, 182, 1) 100%);
+
+            section {
+                padding: 70px;
+                align-items: center;
+            }
+        }
+
+        .nome-da-pessoa {
+
+            p {
+                padding: 5px 0;
+            }
+
+
+        }
+
+
+        footer {
+            width: 100%;
+            height: 110px;
+            padding: 50px;
+            background-color: rgb(139, 181, 236);
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            margin-top: 100px;
+
+            p {
+                margin: 0;
+            }
+        }
+
+        @media (max-width: 767px) {
+
+
+
+            .carousel-item {
+
+                section {
+                    padding: 50px !important;
+                    margin: auto;
+                }
+
+                h1 {
+                    font-size: 40px !important;
+                    margin-bottom: 20px;
+                }
+
+                p {
+                    font-size: 18px !important;
+                }
+            }
+
+            .navbar {
+                padding: 0;
+                flex-direction: column;
+            }
+
+            .navbar-brand {
+                margin: auto;
+                display: flex;
+                align-items: center;
+                font-size: 18px;
+                padding: 1em 0;
+            }
+
+            .navbar-toggler {
+                margin: 0 auto 18px auto;
+                border: none;
+                width: fit-content;
+            }
+
+            .logo {
+                width: 50px;
+            }
+
+            .quem-somos {
+                padding: 20px;
+                text-align: center;
+            }
+
+            .servicos {
+                h1 {
+                    font-size: 30px !important;
+                }
+
+                p {
+                    font-size: 16px !important;
+                }
+            }
+
+        }
+    </style>
+    <title>Communicati Connect</title>
+</head>
+
+<body>
+
+    <header>
+        <nav class="navbar navbar-expand-lg bg-body-tertiary">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#">
+                    <img class="logo" src="assets/logo-removebg-preview.png" alt="">
+                    <div class="brand-name">
+                        <div class="brand-lit-name">
+                            <span style="color: #591FC8ff">C</span>ommunicati <span
+                                style="color: #1E60B6ff;">C</span>onnect
+                        </div>
+                        <p style="font-size: 12px;">Agência de comunicação integrada</p>
+                    </div>
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Quem somos?</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="blog.html">Blog</a>
+                        </li>
+                    </ul>
+
+                </div>
+            </div>
+        </nav>
+
+    </header>
+
+    <hr>
+
+    <main>
+        <section class="servicos">
+
+
+            <h1 style="margin-top: 10px;">Um Compromisso com o Futuro</h1>
+            <p>No contexto empresarial, a sustentabilidade não é apenas uma tendência passageira,
+                mas sim uma necessidade urgente. À medida que enfrentamos desafios ambientais
+                cada vez mais graves, as empresas têm um papel crucial a desempenhar na proteção
+                do nosso planeta e na construção de um futuro mais sustentável para todos, e nessa
+                busca por um futuro mais sustentável, a Agenda 2030 das Nações Unidas desempenha
+                um papel crucial, fornecendo um roteiro para enfrentar os desafios ambientais, sociais
+                e econômicos globais.
+                A Agenda 2030 é um chamado à ação para governos, setor privado, sociedade civil e
+                cidadãos em todo o mundo. Composta por 17 Objetivos de Desenvolvimento
+                Sustentável e 169 metas interconectadas e visa erradicar a pobreza, proteger o planeta
+                e garantir prosperidade para todos, de forma sustentável.
+                Ao desenvolver novas tecnologias, produtos e processos sustentáveis, as empresas
+                podem impulsionar a mudança positiva e liderar pelo exemplo. Desde a produção de
+                materiais recicláveis até a criação de fontes de energia renovável, a inovação está
+                transformando a maneira como as empresas operam e promovem a sustentabilidade.
+                Um aspecto essencial da sustentabilidade corporativa é a transparência e
+                responsabilidade.
+                (Menção do trabalho feito pela Communicati Connect para o Orquidário 4 Estações)
+                As empresas devem ser transparentes sobre o seu desempenho ambiental e social,
+                permitindo que os stakeholders avaliem o seu impacto e tomem decisões informadas.
+                Em última análise, a sustentabilidade corporativa não é apenas uma meta a ser
+                alcançada, mas sim um compromisso contínuo com o futuro do nosso planeta.
+                À medida que avançamos em direção a um mundo mais sustentável, as empresas têm
+                a oportunidade e a responsabilidade de liderar o caminho, adotando práticas
+                ambientalmente responsáveis e promovendo uma cultura de sustentabilidade. Juntos,
+                podemos construir um futuro mais verde e próspero para as gerações futuras.
+                Isso envolve identificar os impactos positivos e negativos das suas operações em
+                áreas como energia limpa, redução das desigualdades, educação de qualidade, entre
+                outros, e estabelecer metas concretas para impulsionar o progresso em direção a
+                esses objetivos.</p>
+        </section>
+    </main>
+
+    <footer>
+        <p>© 2024 Communicati Connect</p>
+        <p>Contato: comunicaticonnect@gmail.com</p>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

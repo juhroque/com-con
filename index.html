@@ -26,7 +26,8 @@
         }
 
         hr {
-            margin: 0;
+            margin: 0 auto;
+            width: 95%;
         }
 
         .navbar {
@@ -34,6 +35,8 @@
             padding: 0.5em 1em;
 
             .navbar-brand {
+                display: flex;
+                flex-direction: row;
                 font-size: 25px;
                 font-weight: 800;
 
@@ -78,7 +81,7 @@
             justify-content: center;
             align-items: center;
             margin-top: 100px;
-            
+
             p {
                 margin: 0;
             }
@@ -145,7 +148,13 @@
             <div class="container-fluid">
                 <a class="navbar-brand" href="#">
                     <img class="logo" src="assets/logo-removebg-preview.png" alt="">
-                    <span style="color: #591FC8ff">C</span>ommunicati <span style="color: #1E60B6ff;">C</span>onnect
+                    <div class="brand-name">
+                        <div class="brand-lit-name">
+                            <span style="color: #591FC8ff">C</span>ommunicati <span
+                                style="color: #1E60B6ff;">C</span>onnect
+                        </div>
+                        <p style="font-size: 12px;">Agência de comunicação integrada</p>
+                    </div>
                 </a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                     data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
@@ -170,7 +179,27 @@
 
     </header>
 
+    <hr>
+
     <main>
+        <section class="servicos">
+            <h1>Serviços:</h1>
+            <ul>
+                <li>Comunicação integrada</li>
+                <li>Relacionamento com a mídia</li>
+                <li>Marketing de conteúdos</li>
+                <li>Conteúdo audiovisual</li>
+                <li>Planejamento de criação</li>
+            </ul>
+
+            <h1>Quem somos?</h1>
+            <p>Uma equipe dedicada a fornecer soluções personalizadas para os clientes. O foco é criar
+                estratégias que unam os universos interno e externo das empresas, trabalhar a
+                comunicação integrada e ampliar a criatividade, impulsionando sua presença e impactando
+                o mercado.</p>
+        </section>
+
+
         <div id="carouselExampleCaptions" class="carousel slide">
             <div class="carousel-indicators">
                 <button type="button" style="background-color: #1E60B6ff;" data-bs-target="#carouselExampleCaptions"
@@ -186,8 +215,7 @@
                         <div class="container">
                             <div class="row">
                                 <div class="col-md-6">
-                                    <h1 style="font-size: 80px;"><span style="color: #591FC8ff">N</span>ossa <span
-                                            style="color: #1E60B6ff;">V</span>isão</h1>
+                                    <h1 style="font-size: 80px;"><span style="color: #1E60B6ff;">V</span>isão</h1>
                                     <p style="font-size: 22px;">Ser uma (empresa/agência) reconhecida como referência em
                                         comunicação,
                                         destacando-se pela excelência na criação de soluções inovadoras e impactantes
@@ -203,8 +231,7 @@
                         <div class="container">
                             <div class="row">
                                 <div class="col-md-6">
-                                    <h1 style="font-size: 80px;"><span style="color: #591FC8ff">N</span>ossa <span
-                                            style="color: #1E60B6ff;">M</span>issão</h1>
+                                    <h1 style="font-size: 80px;"> <span style="color: #1E60B6ff;">M</span>issão</h1>
                                     <p style="font-size: 26px;">Oferecer soluções de comunicação, desde planejamento
                                         estratégico até a produção
                                         de conteúdos audiovisuais e escritos.</p>
@@ -218,14 +245,14 @@
                         <div class="container">
                             <div class="row">
                                 <div class="col-md-6">
-                                    <h1 style="font-size: 80px;"><span style="color: #591FC8ff">N</span>ossos <span
-                                            style="color: #1E60B6ff;">V</span>alores</h1>
-                                    <p style="font-size: 23px;">Na essência de quem somos, está o desejo de fazer a
-                                        diferença através da
-                                        comunicação. Somos mais do que uma empresa, somos parceiros dedicados ao sucesso
-                                        de nossos clientes.
-                                        Acreditamos no poder das histórias bem contadas para envolver, inspirar e
-                                        conectar pessoas.</p>
+                                    <h1 style="font-size: 80px;"> <span style="color: #1E60B6ff;">V</span>alores</h1>
+                                    <ul style="font-size: 18px">
+                                        <li>Integridade em cada interação.</li>
+                                        <li>Criatividade impulsionando resultados.</li>
+                                        <li>Empatia e o Lema.</li>
+                                        <li>Inovação constante.</li>
+                                        <li>Sustentabilidade.</li>
+                                    </ul>
                                 </div>
                             </div>
                         </div>
@@ -245,120 +272,108 @@
         </div>
 
         <section class="quem-somos">
-            <h1>Quem somos?</h1>
-            <p>Somos uma equipe dedicada a fornecer soluções personalizadas para nossos clientes. Nosso foco é criar
-                estratégias que unam os universos interno e externo das empresas, impulsionando sua presença e impacto
-                no mercado.</p>
 
-            <h2>Nossos serviços:</h1>
-                <ul>
-                    <li>Relacionamento com a mídia</li>
-                    <li>Marketing de conteúdos</li>
-                    <li>Conteúdo audiovisual</li>
-                    <li>Planejamento de criação</li>
-                </ul>
-
-                <h2>Nosso time:</h2>
-                <div class="time">
-                    <div class="flip-card">
-                        <div class="flip-card-inner">
-                            <div class="flip-card-front">
-                                <img src="assets/henrique-lopes.jpg" alt="Avatar"
-                                    style="width:300px;height:300px;object-fit: cover;">
-                                <p>Henrique Lopes</p>
-                            </div>
-                            <div class="flip-card-back">
-                                <h1 style="font-size: 24px;">Henrique Lopes</h1>
-                                <p>Produção de conteúdo; Redação e roteiro.</p>
-                            </div>
+            <h2>Nosso time:</h2>
+            <div class="time">
+                <div class="flip-card">
+                    <div class="flip-card-inner">
+                        <div class="flip-card-front">
+                            <img src="assets/henrique-lopes.jpg" alt="Avatar"
+                                style="width:300px;height:300px;object-fit: cover;">
+                            <p>Henrique Lopes</p>
+                        </div>
+                        <div class="flip-card-back">
+                            <h1 style="font-size: 24px;">Henrique Lopes</h1>
+                            <p>Produção de conteúdo; Redação e roteiro.</p>
                         </div>
                     </div>
-
-                    <div class="flip-card">
-                        <div class="flip-card-inner">
-                            <div class="flip-card-front">
-                                <img src="assets/laura-pinheiro.jpg" alt="Avatar"
-                                    style="width:300px;height:300px;object-fit: cover;">
-                                <p>Laura Pinheiro</p>
-                            </div>
-                            <div class="flip-card-back">
-                                <h1 style="font-size: 24px;">Laura Pinheiro</h1>
-                                <p>Experiência com pacote adobe e mídias sociais.</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="flip-card">
-                        <div class="flip-card-inner">
-                            <div class="flip-card-front">
-                                <img src="assets/nicolly-belo.jpg" alt="Avatar"
-                                    style="width:300px;height:300px;object-fit: cover;">
-                                <p>Nicolly Belo</p>
-                            </div>
-                            <div class="flip-card-back">
-                                <h1 style="font-size: 24px;">Nicolly Belo</h1>
-                                <p>Experiência com redes sociais.</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="flip-card">
-                        <div class="flip-card-inner">
-                            <div class="flip-card-front">
-                                <img src="assets/paula-ferreira.jpg" alt="Avatar"
-                                    style="width:300px;height:300px;object-fit: cover;">
-                                <p>Paula Ferreira</p>
-                            </div>
-                            <div class="flip-card-back">
-                                <h1 style="font-size: 24px;">Paula Ferreira</h1>
-                                <p>Desenvolvimento criativo; Redação e roteiro.</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="flip-card">
-                        <div class="flip-card-inner">
-                            <div class="flip-card-front">
-                                <img src="assets/rafaela-panzutti.jpg" alt="Avatar"
-                                    style="width:300px;height:300px;object-fit: cover;">
-                                <p>Rafaela Panzutti</p>
-                            </div>
-                            <div class="flip-card-back">
-                                <h1 style="font-size: 24px;">Rafaela Panzutti</h1>
-                                <p>Experiência com aplicativos de edição e social media.</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="flip-card">
-                        <div class="flip-card-inner">
-                            <div class="flip-card-front">
-                                <img src="assets/victoria-carvalho.jpg" alt="Avatar"
-                                    style="width:300px;height:300px;object-fit: cover;">
-                                <p>Victoria Carvalho</p>
-                            </div>
-                            <div class="flip-card-back">
-                                <h1 style="font-size: 24px;">Victoria Carvalho</h1>
-                                <p>Criação, áudio visual e redes sociais.</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="flip-card">
-                        <div class="flip-card-inner">
-                            <div class="flip-card-front">
-                                <img src="assets/giulia-barros.jpg" alt="Avatar"
-                                    style="width:300px;height:300px;object-fit: cover;">
-                                <p>Giulia Barros</p>
-                            </div>
-                            <div class="flip-card-back">
-                                <h1 style="font-size: 24px;">Giulia Barros</h1>
-                                <p>Desenvolvimento criativo e produção de conteúdos.</p>
-                            </div>
-                        </div>
-                    </div>
-
-
                 </div>
+
+                <div class="flip-card">
+                    <div class="flip-card-inner">
+                        <div class="flip-card-front">
+                            <img src="assets/laura-pinheiro.jpg" alt="Avatar"
+                                style="width:300px;height:300px;object-fit: cover;">
+                            <p>Laura Pinheiro</p>
+                        </div>
+                        <div class="flip-card-back">
+                            <h1 style="font-size: 24px;">Laura Pinheiro</h1>
+                            <p>Experiência com pacote adobe e mídias sociais.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="flip-card">
+                    <div class="flip-card-inner">
+                        <div class="flip-card-front">
+                            <img src="assets/nicolly-belo.jpg" alt="Avatar"
+                                style="width:300px;height:300px;object-fit: cover;">
+                            <p>Nicolly Belo</p>
+                        </div>
+                        <div class="flip-card-back">
+                            <h1 style="font-size: 24px;">Nicolly Belo</h1>
+                            <p>Experiência com redes sociais.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="flip-card">
+                    <div class="flip-card-inner">
+                        <div class="flip-card-front">
+                            <img src="assets/paula-ferreira.jpg" alt="Avatar"
+                                style="width:300px;height:300px;object-fit: cover;">
+                            <p>Paula Ferreira</p>
+                        </div>
+                        <div class="flip-card-back">
+                            <h1 style="font-size: 24px;">Paula Ferreira</h1>
+                            <p>Desenvolvimento criativo; Redação e roteiro.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="flip-card">
+                    <div class="flip-card-inner">
+                        <div class="flip-card-front">
+                            <img src="assets/rafaela-panzutti.jpg" alt="Avatar"
+                                style="width:300px;height:300px;object-fit: cover;">
+                            <p>Rafaela Panzutti</p>
+                        </div>
+                        <div class="flip-card-back">
+                            <h1 style="font-size: 24px;">Rafaela Panzutti</h1>
+                            <p>Experiência com aplicativos de edição e social media.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="flip-card">
+                    <div class="flip-card-inner">
+                        <div class="flip-card-front">
+                            <img src="assets/victoria-carvalho.jpg" alt="Avatar"
+                                style="width:300px;height:300px;object-fit: cover;">
+                            <p>Victoria Carvalho</p>
+                        </div>
+                        <div class="flip-card-back">
+                            <h1 style="font-size: 24px;">Victoria Carvalho</h1>
+                            <p>Criação, áudio visual e redes sociais.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="flip-card">
+                    <div class="flip-card-inner">
+                        <div class="flip-card-front">
+                            <img src="assets/giulia-barros.jpg" alt="Avatar"
+                                style="width:300px;height:300px;object-fit: cover;">
+                            <p>Giulia Barros</p>
+                        </div>
+                        <div class="flip-card-back">
+                            <h1 style="font-size: 24px;">Giulia Barros</h1>
+                            <p>Desenvolvimento criativo e produção de conteúdos.</p>
+                        </div>
+                    </div>
+                </div>
+
+
+            </div>
         </section>
     </main>
-    
-    
+
+
     <footer>
         <p>© 2024 Communicati Connect</p>
         <p>Contato: comunicaticonnect@gmail.com</p>
